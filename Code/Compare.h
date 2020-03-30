@@ -22,129 +22,131 @@
 #define pcout(x) cout<<fixed<<setprecision(10)<<x<<endl
 using namespace std;
 bool compare11(Batsman a,Batsman b){
-	return a.noi>b.noi;
+	return a.retnoi()>b.retnoi();
 }
 bool compare112(Allrounder a,Allrounder b){
-	return a.noi>b.noi;
+	return a.retnoi()>b.retnoi();
 }
 bool compare14(Wk a,Wk b){
-	return a.noi>b.noi;
+	return a.retnoi()>b.retnoi();
 }
 bool compare132(Allrounder a,Allrounder b){
-	return a.nom>b.nom;
+	return a.retnom()>b.retnom();
 }
 bool compare13(Bowler a,Bowler b){
-	return a.nom>b.nom;
+	return a.retnom()>b.retnom();
 }
 bool compare21(Batsman a,Batsman b){
-	return a.totruns>b.totruns;
+	return a.rettotruns()>b.rettotruns();
 }
 bool compare24(Wk a,Wk b){
-	return a.totruns>b.totruns;
+	return a.rettotruns()>b.rettotruns();
 }
 bool compare212(Allrounder a,Allrounder b){
-	return a.totruns>b.totruns;
+	return a.rettotruns()>b.rettotruns();
 }
 bool compare232(Allrounder a,Allrounder b){
-	return a.totwiks>b.totwiks;
+	return a.rettotwiks()>b.rettotwiks();
 }
 bool compare23(Bowler a,Bowler b){
-	return a.totwiks>b.totwiks;
+	return a.rettotwiks()>b.rettotwiks();
 }
 bool compare31(Batsman a,Batsman b){
-	return a.strikerate>b.strikerate;
+	return a.retbatsr()>b.retbatsr();
 }
 bool compare34(Wk a,Wk b){
-	return a.strikerate>b.strikerate;
+	return a.retbatsr()>b.retbatsr();
 }
 bool compare312(Allrounder a,Allrounder b){
-	return a.batstrikerate>b.batstrikerate;
+	return a.retbatsr()>b.retbatsr();
 }
 bool compare33(Bowler a,Bowler b){
-	return a.strikerate>b.strikerate;
+	return a.retbowlsr()>b.retbowlsr();
 }
 bool compare332(Allrounder a,Allrounder b){
-	return a.bowlstrikerate>b.bowlstrikerate;
+	return a.retbowlsr()>b.retbowlsr();
 }
 bool compare41(Batsman a,Batsman b){
-	return a.average>b.average;
+	return a.retbatavg()>b.retbatavg();
 }
 bool compare44(Wk a,Wk b){
-	return a.average>b.average;
+	return a.retbatavg()>b.retbatavg();
 }
 bool compare412(Allrounder a,Allrounder b){
-	return a.bataverage>b.bataverage;
+	return a.retbatavg()>b.retbatavg();
 }
 bool compare43(Bowler a,Bowler b){
-	return a.average>b.average;
+	return a.retbowlavg()>b.retbowlavg();
 }
 bool compare432(Allrounder a,Allrounder b){
-	return a.bowlaverage>b.bowlaverage;
+	return a.retbowlavg()>b.retbowlavg();
 }
 bool compare51(Batsman a,Batsman b){
-	return a.highscore>b.highscore;
+	return a.reths()>b.reths();
 }
 bool compare54(Wk a,Wk b){
-	return a.highscore>b.highscore;
+	return a.reths()>b.reths();
 }
 bool compare512(Allrounder a,Allrounder b){
-	return a.highscore>b.highscore;
+	return a.reths()>b.reths();
 }
 bool compare532(Allrounder a,Allrounder b){
-	if(a.bestf[0]!=b.bestf[0]) return a.bestf[0]>b.bestf[0];
-	else return a.bestf[2]+a.bestf[3]>a.bestf[2]+b.bestf[2];
+	string abestf=a.retbf(),bbestf=b.retbf();
+	if(abestf[0]!=bbestf[0]) return abestf[0]>bbestf[0];
+	else return abestf[2]+abestf[3]>abestf[2]+bbestf[2];
 }
 bool compare53(Bowler a,Bowler b){
-	if(a.bestf[0]!=b.bestf[0]) return a.bestf[0]>b.bestf[0];
-	else return a.bestf[2]+a.bestf[3]>a.bestf[2]+b.bestf[2];
+	string abestf=a.retbf(),bbestf=b.retbf();
+	if(abestf[0]!=bbestf[0]) return abestf[0]>bbestf[0];
+	else return abestf[2]+abestf[3]>abestf[2]+bbestf[2];
 }
 bool compare61(Batsman a,Batsman b){
-	return a.fifties>b.fifties;
+	return a.retfif()>b.retfif();
 }
 bool compare64(Wk a,Wk b){
-	return a.fifties>b.fifties;
+	return a.retfif()>b.retfif();
 }
 bool compare612(Allrounder a,Allrounder b){
-	return a.fifties>b.fifties;
+	return a.retfif()>b.retfif();
 }
 bool compare632(Allrounder a,Allrounder b){
-	return a.fourwis>b.fourwis;
+	return a.retfourwis()>b.retfourwis();
 }
 bool compare63(Bowler a,Bowler b){
-	return a.fourwis>b.fourwis;
+	return a.retfourwis()>b.retfourwis();
 }
 bool compare71(Batsman a,Batsman b){
-	return a.hundreds>b.hundreds;
+	return a.rethun()>b.rethun();
 }
 bool compare74(Wk a,Wk b){
-	return a.hundreds>b.hundreds;
+	return a.rethun()>b.rethun();
 }
 bool compare712(Allrounder a,Allrounder b){
-	return a.hundreds>b.hundreds;
+	return a.rethun()>b.rethun();
 }
 bool compare732(Allrounder a,Allrounder b){
-	return a.fivewis>b.fivewis;
+	return a.retfivewis()>b.retfivewis();
 }
 bool compare73(Bowler a,Bowler b){
-	return a.fivewis>b.fivewis;
+	return a.retfivewis()>b.retfivewis();
 }
 bool compare81(Batsman a,Batsman b){
-	return a.baseprice>b.baseprice;
+	return a.retbp()>b.retbp();
 }
 bool compare84(Wk a,Wk b){
-	return a.baseprice>b.baseprice;
+	return a.retbp()>b.retbp();
 }
 bool compare82(Allrounder a,Allrounder b){
-	return a.baseprice>b.baseprice;
+	return a.retbp()>b.retbp();
 }
 bool compare83(Bowler a,Bowler b){
-	return a.baseprice>b.baseprice;
+	return a.retbp()>b.retbp();
 }
 bool compare93(Bowler a,Bowler b){
-	return a.economy>b.economy;
+	return a.reteco()>b.reteco();
 }
 bool compare92(Allrounder a,Allrounder b){
-	return a.economy>b.economy;
+	return a.reteco()>b.reteco();
 }
 bool compare101(Batsman a,Batsman b){
 	return a.retrank()<b.retrank();
@@ -159,8 +161,8 @@ bool compare104(Wk a,Wk b){
 	return a.retrank()<b.retrank();
 }
 bool compare114(Wk a,Wk b){
-	return a.ncat>b.ncat;
+	return a.retnoofcat()>b.retnoofcat();
 }
 bool compare124(Wk a,Wk b){
-	return a.nstmp>b.nstmp;
+	return a.retnoofstumping()>b.retnoofstumping();
 }

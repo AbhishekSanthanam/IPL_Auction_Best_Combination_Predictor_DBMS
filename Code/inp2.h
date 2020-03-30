@@ -24,7 +24,7 @@ void solveinp2(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 		cin>>t1;
 		if(t1[1]=='a'){
 			cout<<"Chose the number of one of the below attribute based on which the sorting should be done: \n"<<"1)No of innings\n"<<"2)Total Runs\n"<<"3)Strike Rate\n"
-			<<"4)Average\n"<<"5)Highest Score\n"<<"6)No of fifties\n"<<"7)No of hundreds\n"<<"8)Base Price"<<"9)Overall"<<endl;
+			<<"4)Average\n"<<"5)Highest Score\n"<<"6)No of fifties\n"<<"7)No of hundreds\n"<<"8)Base Price\n"<<"9)Overall"<<endl;
 			ll atr;
 			cin>>atr;
 			vector<Batsman> temp=batsmen;
@@ -41,7 +41,7 @@ void solveinp2(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 		}
 		else if(t1[1]=='o'){
 			cout<<"Chose the number of one of the below attribute based on which the sorting should be done: \n"<<"1)No of matches\n"<<"2)Total Wickets\n"<<"3)Strike Rate\n"
-			<<"4)Average\n"<<"5)Economy\n"<<"6)Best Figures\n"<<"7)No of four wicket hauls\n"<<"8)No of five wicket hauls\n"<<"9)Base Price"<<"10)Overall"<<endl;
+			<<"4)Average\n"<<"5)Economy\n"<<"6)Best Figures\n"<<"7)No of four wicket hauls\n"<<"8)No of five wicket hauls\n"<<"9)Base Price\n"<<"10)Overall"<<endl;
 			ll atr;
 			cin>>atr;
 			vector<Bowler> temp=bowlers;
@@ -57,7 +57,7 @@ void solveinp2(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 			else sort(temp.begin(),temp.end(),compare103);
 			For(i,0,temp.size()) temp[i].print();
 		}
-		if(t1[1]=='i'){
+		else if(t1[1]=='i'){
 			cout<<"Chose the number of one of the below attribute based on which the sorting should be done: \n"<<"1)No of innings\n"<<"2)Total Runs\n"<<"3)Strike Rate\n"
 			<<"4)Average\n"<<"5)Highest Score\n"<<"6)No of fifties\n"<<"7)No of hundreds\n"<<"8)No of catches\n"<<"9)No of stumpings\n"<<"10)Base Price\n"<<"11)Overall"<<endl;
 			ll atr;

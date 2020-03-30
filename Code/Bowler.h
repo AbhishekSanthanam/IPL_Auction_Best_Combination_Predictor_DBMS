@@ -22,14 +22,14 @@ class Bowler{
 	public:
 	string name,bestf;
 	ll nom,totwiks,fourwis,fivewis,baseprice,rank;
-	float strikerate,average,economy;
+	float bowlstrikerate,bowlaverage,economy;
 	Bowler(){	}
 	Bowler(string n,ll nm,ll wik,float bosr,float boavg,float eco,string bf,ll fowi,ll fiwi,ll r,ll bp){
 		name=n;
 		nom=nm;
 		totwiks=wik;
-		strikerate=bosr;
-		average=boavg;
+		bowlstrikerate=bosr;
+		bowlaverage=boavg;
 		economy=eco;
 		bestf=bf;
 		fourwis=fowi;
@@ -42,15 +42,42 @@ class Bowler{
 		d2("Name: ",name);
 		d2("No of Matches: ",nom);
 		d2("Total Wickets: ",totwiks);
-		d2("Strikerate: ",strikerate);
-		d2("Average: ",average);
+		d2("Strikerate: ",bowlstrikerate);
+		d2("Average: ",bowlaverage);
 		d2("Economy: ",economy);
 		d2("Best figures: ",bestf);
 		d2("No of 4wi: ",fourwis);
 		d2("No of 5wi: ",fivewis);
 		d2("Base Price: ",baseprice);
 	}
-	float retrank(){
+	ll retrank(){
 		return rank;
+	}
+	string retbf(){
+		return bestf;
+	}
+	ll retnom(){
+		return nom;
+	}
+	ll retbp(){
+		return baseprice;
+	}
+	ll rettotwiks(){
+		return totwiks;
+	} 
+	ll retfourwis(){
+		return fourwis;
+	}
+	ll retfivewis(){
+		return fivewis;
+	}
+	float retbowlsr(){
+		return bowlstrikerate;
+	}
+	float retbowlavg(){
+		return bowlaverage;
+	}
+	float reteco(){
+		return economy;
 	}
 };

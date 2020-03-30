@@ -19,13 +19,13 @@
 using namespace std;
 //b(n,nm,ni,runs,sr,avg,hs,fif,hun,wik,bosr,boavg,eco,bf,fowi,fiwi,bp);
 class Allrounder{
-	public:
 	string name;
 	ll nom,noi,totruns,highscore,fifties,hundreds,baseprice,rank;
 	float batstrikerate,bataverage;
 	string bestf;
 	ll totwiks,fourwis,fivewis;
 	float bowlstrikerate,bowlaverage,economy;
+	public:
 	Allrounder() { }
 	Allrounder(string n,ll nm,ll ni,ll runs,float sr,float avg,ll hs,ll fif,ll hun,ll wik,float bosr,float boavg,float eco,string bf,ll fowi,ll fiwi,ll r,ll bp){
 		name=n;
@@ -67,7 +67,56 @@ class Allrounder{
 		d2("No of 5wi: ",fivewis);
 		d2("Base Price: ",baseprice);
 	}
+	
 	ll retrank(){
 		return rank;
+	}
+	string retbf(){
+		return bestf;
+	}
+	ll retnom(){
+		return nom;
+	}
+	ll retnoi(){
+		return noi;
+	}
+	ll rettotruns(){
+		return totruns;
+	}
+	ll reths(){
+		return highscore;
+	}
+	ll retfif(){
+		return fifties;
+	}
+	ll rethun(){
+		return hundreds;
+	}
+	ll retbp(){
+		return baseprice;
+	}
+	ll rettotwiks(){
+		return totwiks;
+	} 
+	ll retfourwis(){
+		return fourwis;
+	}
+	ll retfivewis(){
+		return fivewis;
+	}
+	float retbatsr(){
+		return batstrikerate;
+	}
+	float retbatavg(){
+		return bataverage;
+	}
+	float retbowlsr(){
+		return bowlstrikerate;
+	}
+	float retbowlavg(){
+		return bowlaverage;
+	}
+	float reteco(){
+		return economy;
 	}
 };

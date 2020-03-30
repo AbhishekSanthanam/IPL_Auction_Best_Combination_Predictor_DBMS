@@ -45,8 +45,8 @@ void solveinp3(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 		if(t3[1]=='a'){
 			Batsman a,b;
 			For(i,0,batsmen.size()){
-				if(batsmen[i].name==p1) a=batsmen[i];
-				if(batsmen[i].name==p2) b=batsmen[i];
+				if(batsmen[i].retname()==p1) a=batsmen[i];
+				if(batsmen[i].retname()==p2) b=batsmen[i];
 			}
 			cout<<"Chose the number of one of the below attribute based on which the comparison should be done: \n"<<"1)No of innings\n"<<"2)Total Runs\n"<<"3)Strike Rate\n"
 			<<"4)Average\n"<<"5)Highest Score\n"<<"6)No of fifties\n"<<"7)No of hundreds\n"<<"8)Base Price"<<endl;
@@ -88,8 +88,8 @@ void solveinp3(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 		else if(t3[1]=='o'){
 			Bowler a,b;
 			For(i,0,bowlers.size()){
-				if(bowlers[i].name==p1) a=bowlers[i];
-				else if(batsmen[i].name==p2) b=bowlers[i];
+				if(bowlers[i].retname()==p1) a=bowlers[i];
+				else if(batsmen[i].retname()==p2) b=bowlers[i];
 			}
 			cout<<"Chose the number of one of the below attribute based on which the sorting should be done: \n"<<"1)No of matches\n"<<"2)Total Wickets\n"<<"3)Strike Rate\n"
 			<<"4)Average\n"<<"5)Economy\n"<<"6)Best Figures\n"<<"7)No of four wicket hauls\n"<<"8)No of five wicket hauls\n"<<"9)Base Price"<<endl;
@@ -135,8 +135,8 @@ void solveinp3(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 		else if(t3[1]=='i'){
 			Wk a,b;
 			For(i,0,WKs.size()){
-				if(WKs[i].name==p1) a=WKs[i];
-				if(WKs[i].name==p2) b=WKs[i];
+				if(WKs[i].retname()==p1) a=WKs[i];
+				if(WKs[i].retname()==p2) b=WKs[i];
 			}
 			cout<<"Chose the number of one of the below attribute based on which the comparison should be done: \n"<<"1)No of innings\n"<<"2)Total Runs\n"<<"3)Strike Rate\n"
 			<<"4)Average\n"<<"5)Highest Score\n"<<"6)No of fifties\n"<<"7)No of hundreds\n"<<"8)No of catches\n"<<"9)No of stumpings\n"<<"10)Base Price"<<endl;
@@ -186,8 +186,8 @@ void solveinp3(vector<Batsman> batsmen,vector<Bowler> bowlers,vector<Allrounder>
 		else{
 			Allrounder a,b;
 			For(i,0,allrounders.size()){
-				if(allrounders[i].name==p1) a=allrounders[i];
-				else if(allrounders[i].name==p2) b=allrounders[i];
+				if(allrounders[i].retname()==p1) a=allrounders[i];
+				else if(allrounders[i].retname()==p2) b=allrounders[i];
 			}
 			cout<<"Chose the number of one of the below attribute based on which the sorting should be done: \n"<<"1)No of innings\n"<<"2)Total Runs\n"<<"3)Batting Strike Rate\n"
 			<<"4)Batting Average\n"<<"5)Highest Score\n"<<"6)No of fifties\n"<<"7)No of hundreds\n"<<"8)Base Price"<<"9)No of matches\n"<<"10)Total Wickets\n"<<"11)Bowling Strike Rate\n"

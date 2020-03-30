@@ -22,15 +22,15 @@ class Wk{
 	public:
 	string name;
 	ll nom,noi,totruns,highscore,fifties,hundreds,baseprice,ncat,nstmp,rank;
-	float strikerate,average;
+	float batstrikerate,bataverage;
 	Wk(){	}
 	Wk(string n,ll nm,ll ni,ll runs,float sr,float avg,ll hs,ll fif,ll hun,ll noofcat,ll noofstmp,ll r,ll bp){
 		name=n;
 		nom=nm;
 		noi=ni;
 		totruns=runs;
-		strikerate=sr;
-		average=avg;
+		batstrikerate=sr;
+		bataverage=avg;
 		highscore=hs;
 		fifties=fif;
 		hundreds=hun;
@@ -45,8 +45,8 @@ class Wk{
 		d2("No of Matches: ",nom);
 		d2("No of Innings: ",noi);
 		d2("Total Runs: ",totruns);
-		d2("Strikerate: ",strikerate);
-		d2("Average: ",average);
+		d2("Strikerate: ",batstrikerate);
+		d2("Average: ",bataverage);
 		d2("Highest Score: ",highscore);
 		d2("No of fifties: ",fifties);
 		d2("No of hundreds: ",hundreds);
@@ -56,5 +56,38 @@ class Wk{
 	}
 	ll retrank(){
 		return rank;
+	}
+	ll retnom(){
+		return nom;
+	}
+	ll retnoi(){
+		return noi;
+	}
+	ll rettotruns(){
+		return totruns;
+	}
+	ll reths(){
+		return highscore;
+	}
+	ll retfif(){
+		return fifties;
+	}
+	ll rethun(){
+		return hundreds;
+	}
+	ll retbp(){
+		return baseprice;
+	}
+	float retbatsr(){
+		return batstrikerate;
+	}
+	float retbatavg(){
+		return bataverage;
+	}
+	ll retnoofcat(){
+		return ncat;
+	}
+	ll retnoofstumping(){
+		return nstmp;
 	}
 };
